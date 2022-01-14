@@ -99,12 +99,42 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #935d8c;
+    background: linear-gradient(180deg, #d70071, #9c4e97, #0035aa);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 20s ease infinite;
+    -moz-animation: AnimationName 20s ease infinite;
+    animation: AnimationName 20s ease infinite;
+		}
+
+		@-webkit-keyframes AnimationName {
+    	0%{background-position:51% 0%}
+    	50%{background-position:50% 100%}
+    	100%{background-position:51% 0%}
+		}
+		@-moz-keyframes AnimationName {
+    	0%{background-position:51% 0%}
+    	50%{background-position:50% 100%}
+    	100%{background-position:51% 0%}
+		}
+		@keyframes AnimationName {
+    	0%{background-position:51% 0%}
+    	50%{background-position:50% 100%}
+    	100%{background-position:51% 0%}
+		}
+
+		/*background: rgb(254,178,254);
+		background: -moz-linear-gradient(0deg, rgba(254,178,254,1) 0%, rgba(71,80,218,1) 100%);
+		background: -webkit-linear-gradient(0deg, rgba(254,178,254,1) 0%, rgba(71,80,218,1) 100%);
+		background: linear-gradient(0deg, rgba(254,178,254,1) 0%, rgba(71,80,218,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#feb2fe",endColorstr="#4750da",GradientType=1);*/
+
+		/* background-color: #935d8c;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-	}
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%); */
+		
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -120,7 +150,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #935d8c;
+		/*background-color: #935d8c;*/
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -2814,7 +2844,7 @@ input, select, textarea {
 	}
 
 		.features li {
-			width: calc(33.33333% - 2em);
+			width: 100% /*calc(33.33333% - 2em);*/
 			margin-left: 2em;
 			margin-top: 3em;
 			padding: 0;
@@ -2831,7 +2861,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.features li {
-				width: calc(50% - 2em);
+				width: calc(60% - 2em);
 			}
 
 				.features li:nth-child(3) {
@@ -3704,6 +3734,13 @@ input, select, textarea {
 			width: 100%;
 			margin: 2.5em 0 2em 0;
 			font-size: 0.8em;
+			text-align: right;
+		}
+
+		#footer .icons {
+			width: 100%;
+			margin: 2.5em 0 2em 0;
+			font-size: 0.8em;
 			text-align: center;
 		}
 
@@ -3731,7 +3768,7 @@ input, select, textarea {
 				}
 
 				#footer .copyright {
-					text-align: left;
+					text-align: right;
 				}
 
 		}
