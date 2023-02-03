@@ -1,2 +1,2 @@
 # ryan-heneghan.github.io
-My portfolio website for both Semester 1 and 2 of my professional development module.
+My portfolio website created as part of my university assignment, will keep and update with both my academic, personal and soon to be professional projects.
